@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                let num1 = parseInt($('#t1').val())
+                let num2 = parseInt($('#t2').val())
+                let sum = num1 + num2;
+                $('#result').val(sum);
+            })
+
+        })
+    </script>
+</head>
+<body>
+    Number1: <input type="text" id="t1"><br><br>
+    Number2: <input type="text" id="t2"><br><br>
+   
+    
+    <button id="btn">Additional</button>
+    Result: <input type="text" id="result" readonly>
+</body>
+</html>
